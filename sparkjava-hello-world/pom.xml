@@ -21,7 +21,12 @@
 			<version>1.7.25</version>
 		</dependency>
 	</dependencies>
-
+	<properties>
+        <jboss-as.deploy.hostname>192.168.29.58</jboss-as.deploy.hostname>  <!-- Where to deploy. -->
+        <jboss-as.deploy.user>ravindra</jboss-as.deploy.user>
+        <jboss-as.deploy.pass>Pawar007.</jboss-as.deploy.pass>
+        <plugin.war.warName>target/sparkjava-hello-world-1.0.war</plugin.war.warName>
+    </properties>
 	<build>
 		<plugins>
 			<plugin>
