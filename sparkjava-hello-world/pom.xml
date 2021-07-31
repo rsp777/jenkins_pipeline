@@ -22,9 +22,9 @@
 		</dependency>
 	</dependencies>
 	<properties>
-        <jboss-as.deploy.hostname>192.168.29.58</jboss-as.deploy.hostname>  <!-- Where to deploy. -->
-        <jboss-as.deploy.user>ravindra</jboss-as.deploy.user>
-        <jboss-as.deploy.pass>Pawar007.</jboss-as.deploy.pass>
+        <jboss.deploy.hostname>192.168.29.58</jboss.deploy.hostname>  <!-- Where to deploy. -->
+        <jboss.deploy.user>ravindra</jboss.deploy.user>
+        <jboss.deploy.pass>Pawar007.</jboss.deploy.pass>
         <plugin.war.warName>target/sparkjava-hello-world-1.0.war</plugin.war.warName>
     </properties>
 	<build>
