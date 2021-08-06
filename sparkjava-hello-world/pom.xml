@@ -21,12 +21,7 @@
 			<version>1.7.25</version>
 		</dependency>
 	</dependencies>
-	<properties>
-        <jboss.deploy.hostname>192.168.29.58</jboss.deploy.hostname>  <!-- Where to deploy. -->
-        <jboss.deploy.user>ravindra</jboss.deploy.user>
-        <jboss.deploy.pass>Pawar007.</jboss.deploy.pass>
-        <plugin.war.warName>target/sparkjava-hello-world-1.0.war</plugin.war.warName>
-    </properties>
+	
 	<build>
 		<plugins>
 			<plugin>
@@ -40,19 +35,11 @@
 					<debug>true</debug>
 				</configuration>
 			</plugin>
-			<plugin>
-					<groupId>org.jboss.as.plugins</groupId>
-					<artifactId>jboss-as-maven-plugin</artifactId>
-					<version>6.3.Final</version>
-					<configuration>
-						<hostname>${hostname}</hostname>
-						<port>9990</port>
-						<username>ravindra</username>
-						<password>Pawar007.</password>
-					</configuration>
-			
-				
-			</plugin>
+			 <plugin>
+                <groupId>org.wildfly.plugins</groupId>
+                <artifactId>wildfly-maven-plugin</artifactId>
+                <version>2.1.0.Beta1</version>
+            </plugin>
 		</plugins>
 	</build>
 </project>
