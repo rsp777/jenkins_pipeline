@@ -1,15 +1,20 @@
 import spark.servlet.SparkApplication;
 
 import static spark.Spark.get;
-
-public class HelloWorld implements SparkApplication {
+//implements SparkApplication
+public class HelloWorld  {
 	public static void main(String[] args) {
-		new HelloWorld().init();
+		System.out.println(new HelloWorld().helloString());
 	}  
-
-	@Override
-	public void init() {  
-//		get("/hello", (req, res) -> "<b>Hello World<b>");
-		System.out.println("<b>Hello World<b>");
+	
+	
+	public String helloString() {
+		return "<b>Hello World<b>";
 	}
+//	@Override
+//	public String init() {  
+////		get("/hello", (req, res) -> "<b>Hello World<b>");
+////		System.out.println("<b>Hello World<b>");
+//		return "<b>HelloWorld<b>";
+//	}
 }
