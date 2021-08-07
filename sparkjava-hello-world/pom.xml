@@ -42,8 +42,8 @@
 <configuration>
    <hostname>192.168.29.56</hostname>
    <port>9990</port>
-   <username>ravindra</username>
-   <password>Pawar007.</password>
+   <username>pawar</username>
+   <password>pawar</password>
 </configuration>
             </plugin>
 		</plugins>
