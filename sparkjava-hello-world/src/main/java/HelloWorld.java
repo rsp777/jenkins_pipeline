@@ -6,7 +6,7 @@ public class HelloWorld  {
 	public static void main(String[] args) {
 		System.out.printf(new HelloWorld().helloString());
 	}  
-	
+	 
 	
 	public String helloString() {
 		return "<b>Hello World"
