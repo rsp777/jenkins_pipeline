@@ -2,20 +2,17 @@ import spark.servlet.SparkApplication;
 
 import static spark.Spark.get;
 //implements SparkApplication
-public class HelloWorld  {
+public class HelloWorld  implements SparkApplication{
 	public static void main(String[] args ) {
-		System.out.printf(new HelloWorld().helloString());
+		new HelloWorld().init();
 	}  
 	 
 	
-	public String helloString() {
-		return "<b>Hello World"
-				+ "My name is ravindra<b>";
+	
+	@Override
+	public void init() {  
+		get("/hello", (req, res) -> "<b>Hello World<b>I am Ravindra Singh Pawar");
+//		System.out.println("<b>Hello World, I am Ravindra Singh Pawar<b>");
+	
 	}
-//	@Override
-//	public String init() {  
-////		get("/hello", (req, res) -> "<b>Hello World<b>");
-////		System.out.println("<b>Hello World<b>");
-//		return "<b>HelloWorld<b>";
-//	}
 }
